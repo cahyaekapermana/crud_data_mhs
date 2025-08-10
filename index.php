@@ -51,8 +51,8 @@ unset($_SESSION['update']);
         <?php
         // Sebagai nomer pengganti id jd agar urut tidak ikut di table
         $no = 1; // mulai dari 1
-
-        foreach ($pdo->query("SELECT * FROM daftar_mhs ORDER BY id ASC") as $row): ?>
+        foreach ($pdo->query("SELECT * FROM daftar_mhs ORDER BY id ASC") as $row): 
+        ?>
             <tr>
                 <td><?= $no++ ?></td>
                 <td><?= $row['nim'] ?></td>
